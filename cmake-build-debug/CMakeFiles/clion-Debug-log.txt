@@ -1,0 +1,5 @@
+C:\Users\kentl\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/kentl/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -DCMAKE_C_COMPILER=C:/software/useful/STMicroelectronics/STM32Cube/STM32CubeCLT/GNU-tools-for-STM32/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=C:/software/useful/STMicroelectronics/STM32Cube/STM32CubeCLT/GNU-tools-for-STM32/bin/arm-none-eabi-g++.exe -G Ninja -S D:\Data\SJTU\Robomaster\CLionProjects\2024_10_03 -B D:\Data\SJTU\Robomaster\CLionProjects\2024_10_03\cmake-build-debug
+-- Minimal optimization, debug info included
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: D:/Data/SJTU/Robomaster/CLionProjects/2024_10_03/cmake-build-debug
