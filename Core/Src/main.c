@@ -105,7 +105,6 @@ int main(void)
   __HAL_UART_ENABLE_IT(&huart6,UART_IT_IDLE);
   HAL_UART_Receive_DMA(&huart6,buffer,20);
 
-
   /* USER CODE END 2 */
 
   /* Infinite loop */

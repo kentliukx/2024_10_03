@@ -23,7 +23,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d655d6f9-31ff-4b11-8bcd-b4a342e4c9ac" name="Changes" comment="收不到字符串">
+    <list default="true" id="d655d6f9-31ff-4b11-8bcd-b4a342e4c9ac" name="Changes" comment="已经修复，功能正常，之前原因是mxcube里面dma方向设置错了">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2024_10_03.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/2024_10_03.ioc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" afterDir="false" />
@@ -32,7 +32,6 @@
       <change beforePath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03.uvguix.kentl" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03.uvguix.kentl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03.uvoptx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.axf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.build_log.htm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.hex" afterDir="false" />
@@ -43,7 +42,6 @@
       <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/main.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/stm32f4xx_it.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/stm32f4xx_it.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/usart.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/usart.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +134,8 @@
       <workItem from="1727963609081" duration="427000" />
       <workItem from="1727964769266" duration="206000" />
       <workItem from="1728000510559" duration="669000" />
-      <workItem from="1728003791696" duration="301000" />
+      <workItem from="1728003791696" duration="1498000" />
+      <workItem from="1728005307267" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="空闲中断+DMA实现将接收的字符串发回&#10;空闲中断是没问题了&#10;但是现在读取的字符串长度总是0导致没法把字符串发回&#10;应该是&#10;__HAL_DMA_GET_COUNTER(huart6.hdmarx);&#10;的问题">
       <option name="closed" value="true" />
@@ -162,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727963696385</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="已经修复，功能正常，之前原因是mxcube里面dma方向设置错了">
+      <option name="closed" value="true" />
+      <created>1728004264881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728004264881</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +178,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="空闲中断+DMA实现将接收的字符串发回&#10;空闲中断是没问题了&#10;但是现在读取的字符串长度总是0导致没法把字符串发回&#10;应该是&#10;__HAL_DMA_GET_COUNTER(huart6.hdmarx);&#10;的问题" />
     <MESSAGE value="length of char[]-to-be-sent is always 0" />
-    <option name="LAST_COMMIT_MESSAGE" value="length of char[]-to-be-sent is always 0" />
+    <MESSAGE value="已经修复，功能正常，之前原因是mxcube里面dma方向设置错了" />
+    <option name="LAST_COMMIT_MESSAGE" value="已经修复，功能正常，之前原因是mxcube里面dma方向设置错了" />
   </component>
 </project>
