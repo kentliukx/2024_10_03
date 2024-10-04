@@ -23,8 +23,27 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d655d6f9-31ff-4b11-8bcd-b4a342e4c9ac" name="Changes" comment="length of char[]-to-be-sent is always 0">
+    <list default="true" id="d655d6f9-31ff-4b11-8bcd-b4a342e4c9ac" name="Changes" comment="收不到字符串">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2024_10_03.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/2024_10_03.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f4xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/dma.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/dma.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f4xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03.uvguix.kentl" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03.uvguix.kentl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03.uvoptx" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03.uvoptx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.axf" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.axf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.build_log.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.build_log.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.hex" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.hex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.htm" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.map" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03_2024_10_03.dep" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/2024_10_03_2024_10_03.dep" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/dma.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/dma.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/main.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/main.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/stm32f4xx_it.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/stm32f4xx_it.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MDK-ARM/2024_10_03/usart.o" beforeDir="false" afterPath="$PROJECT_DIR$/MDK-ARM/2024_10_03/usart.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +57,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kentliukx&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:kentliukx/2024_10_03.git&quot;,
+    &quot;accountId&quot;: &quot;a16d4b85-7998-4622-9a96-1c5c0c50d735&quot;
+  }
+}</component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2024" />
@@ -102,7 +133,10 @@
       <workItem from="1727960483545" duration="15000" />
       <workItem from="1727960585614" duration="2487000" />
       <workItem from="1727963187758" duration="345000" />
-      <workItem from="1727963609081" duration="2000" />
+      <workItem from="1727963609081" duration="427000" />
+      <workItem from="1727964769266" duration="206000" />
+      <workItem from="1728000510559" duration="669000" />
+      <workItem from="1728003791696" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="空闲中断+DMA实现将接收的字符串发回&#10;空闲中断是没问题了&#10;但是现在读取的字符串长度总是0导致没法把字符串发回&#10;应该是&#10;__HAL_DMA_GET_COUNTER(huart6.hdmarx);&#10;的问题">
       <option name="closed" value="true" />
@@ -120,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727963512865</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="length of char[]-to-be-sent is always 0">
+      <option name="closed" value="true" />
+      <created>1727963696385</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727963696385</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -106,7 +106,6 @@ int main(void)
   HAL_UART_Receive_DMA(&huart6,buffer,20);
 
 
-
   /* USER CODE END 2 */
 
   /* Infinite loop */

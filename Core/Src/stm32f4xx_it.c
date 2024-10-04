@@ -57,7 +57,7 @@ extern char buffer[20];
 /* External variables --------------------------------------------------------*/
 extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim6;
-extern DMA_HandleTypeDef hdma_usart6_tx;
+extern DMA_HandleTypeDef hdma_usart6_rx;
 extern UART_HandleTypeDef huart6;
 /* USER CODE BEGIN EV */
 
@@ -313,17 +313,17 @@ void TIM6_DAC_IRQHandler(void)
 }
 
 /**
-  * @brief This function handles DMA2 stream6 global interrupt.
+  * @brief This function handles DMA2 stream1 global interrupt.
   */
-void DMA2_Stream6_IRQHandler(void)
+void DMA2_Stream1_IRQHandler(void)
 {
-  /* USER CODE BEGIN DMA2_Stream6_IRQn 0 */
+  /* USER CODE BEGIN DMA2_Stream1_IRQn 0 */
 
-  /* USER CODE END DMA2_Stream6_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_usart6_tx);
-  /* USER CODE BEGIN DMA2_Stream6_IRQn 1 */
+  /* USER CODE END DMA2_Stream1_IRQn 0 */
+  HAL_DMA_IRQHandler(&hdma_usart6_rx);
+  /* USER CODE BEGIN DMA2_Stream1_IRQn 1 */
 
-  /* USER CODE END DMA2_Stream6_IRQn 1 */
+  /* USER CODE END DMA2_Stream1_IRQn 1 */
 }
 
 /**
@@ -337,10 +337,7 @@ void USART6_IRQHandler(void)
     __HAL_UART_CLEAR_IDLEFLAG(&huart6);
     HAL_UART_DMAStop(&huart6);
     uint8_t len=20-__HAL_DMA_GET_COUNTER(huart6.hdmarx);
-
-    HAL_UART_Transmit_DMA(&huart6,&len,1);
-
-    HAL_UART_Transmit_DMA(&huart6,buffer,len);
+    HAL_UART_Transmit_IT(&huart6,buffer,len);
     HAL_UART_Receive_DMA(&huart6,buffer,20);
   }
   /* USER CODE END USART6_IRQn 0 */
